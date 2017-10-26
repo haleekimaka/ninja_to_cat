@@ -10,7 +10,7 @@
                 
                 console.log("Document is Ready");
 
-                $('img').click(function(){
+                $('img').hover(function(){
                     var alt_image = $(this).attr('data-alt-src');
                     $(this).attr('data-alt-src', $(this).attr('src'));
                     $(this).attr('src', alt_image); 
